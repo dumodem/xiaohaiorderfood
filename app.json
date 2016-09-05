@@ -1,0 +1,7 @@
+{
+  "name": "API.AI Xiaohai Order Food Webhook",
+  "description": "Little Hap Order Food",
+  "repository": "https://github.com/dumodem/xiaohaiorderfood",
+  "logo": "http://xvir.github.io/img/apiai.png",
+  "keywords": ["api.ai", "natural language"]
+}
