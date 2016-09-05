@@ -28,13 +28,13 @@ def webhook():
     return r
 
 def makeWebhookResult(req):
-    if req.get("result").get("action") != "get-newproduct-for-username":
+    if req.get("result").get("action") != "get-user-likes":
         return {}
     result = req.get("result")
     parameters = result.get("parameters")
-    username = parameters.get("username")
-    newproduct = parameters.get("newproduct")
-    userlikes = '香辣鸡翅'
+    username = "happy pig"
+    userlikes = "香辣鸡翅"
+    newproduct = "香辣鸡翅2.0"
 
     speech = "你好，" + username + "我知道你很喜欢吃" + userlikes + "。现在我们推出" + newproduct + "，味道够辣量又足，要不要试一试？"
 
