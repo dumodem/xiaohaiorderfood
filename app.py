@@ -35,7 +35,7 @@ def makeWebhookResult(req):
     username = parameters.get("user")
     userlikes = parameters.get("likes")
 
-    speech = result.get("fulfillment").get("speech")
+    ＃speech = result.get("fulfillment").get("speech")
     #speech = username + " 喜欢 " ＋ userlikes + "!"
     
     print("Response:")
