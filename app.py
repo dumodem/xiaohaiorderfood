@@ -36,8 +36,6 @@ def makeWebhookResult(req):
     newproduct = parameters.get("newproduct")
     userlikes = '香辣鸡翅'
 
-    cost = {'Europe':100, 'North America':200, 'South America':300, 'Asia':400, 'Africa':500}
-
     speech = "你好，" + username + "我知道你很喜欢吃" + userlikes + "。现在我们推出" + newproduct + "，味道够辣量又足，要不要试一试？"
 
     print("Response:")
