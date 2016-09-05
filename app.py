@@ -30,7 +30,7 @@ def webhook():
 def makeWebhookResult(req):
     if req.get("result").get("action") != "get-user-likes":
         return {}
-    result = req.get("result")
+    #result = req.get("result")
     #parameters = result.get("parameters")
     username = "happy pig"
     userlikes = "香辣鸡翅"
