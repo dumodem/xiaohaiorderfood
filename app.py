@@ -19,7 +19,7 @@ def webhook():
     print("Request:")
     print(json.dumps(req, indent=4))
 
-    res = makeWebhookResult-2(req)
+    res = makeWebhookResult(req)
 
     res = json.dumps(res, indent=4)
     print(res)
@@ -27,8 +27,6 @@ def webhook():
     r.headers['Content-Type'] = 'application/json'
     return r
 
-def makeWebbookResult-2(req):
-    return {}
 
 def makeWebhookResult(req):
     if req.get("result").get("action") != "get-user-likes":
@@ -37,11 +35,9 @@ def makeWebhookResult(req):
     parameters = result.get("parameters")
     username = parameters.get("user")
     userlikes = parameters.get("likes")
-    specials = parameters.get("specials")
     otherelse = parameters.get("otherelse")
-    botresponse = parameters.get("botresponse")
     
-    speech = “”
+    speech = “confirm?”
     
     
     print("Response:")
