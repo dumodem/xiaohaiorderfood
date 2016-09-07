@@ -41,7 +41,7 @@ def makeWebhookResult(req):
     otherelse = parameters.get("otherelse")
     botresponse = parameters.get("botresponse")
     
-    speech = “Can you repeat your answer?”
+    speech = “Can you repeat your answer?..”
     
     
     print("Response:")
