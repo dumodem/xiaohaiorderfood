@@ -19,13 +19,16 @@ def webhook():
     print("Request:")
     print(json.dumps(req, indent=4))
 
-    res = makeWebhookResult(req)
+    res = makeWebhookResult-2(req)
 
     res = json.dumps(res, indent=4)
     print(res)
     r = make_response(res)
     r.headers['Content-Type'] = 'application/json'
     return r
+
+def makeWebbookResult-2(req):
+    return {}
 
 def makeWebhookResult(req):
     if req.get("result").get("action") != "get-user-likes":
