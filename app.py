@@ -32,13 +32,13 @@ def webhook():
 def makeWebhookResult(req):
     if req.get("result").get("action") != "get-user-likes":
         return {}
-    result = req.get("result")
-    parameters = result.get("parameters")
-    username = parameters.get("user")
-    userlikes = parameters.get("likes")
-    recommend = parameters.get("recommend")
+    #result = req.get("result")
+    #parameters = result.get("parameters")
+    #username = parameters.get("user")
+    #userlikes = parameters.get("likes")
+    #recommend = parameters.get("recommend")
     
-    speech = “”
+    speech = “please confirm...”
     
     
     print("Response:")
