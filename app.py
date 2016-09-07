@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#-*- coding=utf-8 -*-
 
 import urllib
 import json
@@ -30,7 +31,7 @@ def webhook():
 
 
 def makeWebhookResult(req):
-    speech = "Please confirm by speaking 'confirm'. Thanks. "
+    speech = "请确认，说是的，或说不是。"
     
     
     print("Response:")
