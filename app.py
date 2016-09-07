@@ -31,14 +31,8 @@ def webhook():
 
 
 def makeWebhookResult(req):
-    if req.get("result").get("action") != "get-user-likes":
-        return {}
-    result = req.get("result")
-    parameters = result.get("parameters")
-    otherelse = parameters.get("otherelse")
     
     speech = "请确认，说是的，或说不是。"
-    
     
     print("Response:")
     print(speech)
