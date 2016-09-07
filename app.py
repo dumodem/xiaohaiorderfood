@@ -38,7 +38,7 @@ def makeWebhookResult(req):
     #userlikes = parameters.get("likes")
     #recommend = parameters.get("recommend")
     
-    speech = “please confirm...”
+    speech = “”
     
     
     print("Response:")
