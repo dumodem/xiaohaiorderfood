@@ -30,7 +30,20 @@ def webhook():
 
 
 def makeWebhookResult(req):
-    return {}
+    speech = “Please confirm by speaking 'Confirm' ”
+    
+    
+    print("Response:")
+    print(speech)
+
+    return {
+        "speech": speech,
+        "displayText": speech,
+        #"data": {},
+        # "contextOut": [],
+        "source": "xiaohaiorderfood"
+    }
+    
 
 
 if __name__ == '__main__':
