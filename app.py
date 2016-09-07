@@ -19,15 +19,8 @@ def webhook():
     print("Request:")
     print(json.dumps(req, indent=4))
 
-    res = {
-        "speech": "please confirm.",
-        "displayText": "please confirm",
-        #"data": {},
-        # "contextOut": [],
-        "source": "xiaohaiorderfood"
-        }
-        
-    #res = makeWebhookResult(req)
+    
+    res = makeWebhookResult(req)
 
     res = json.dumps(res, indent=4)
     print(res)
@@ -45,7 +38,7 @@ def makeWebhookResult(req):
     userlikes = parameters.get("likes")
     recommend = parameters.get("recommend")
     
-    speech = “Please confirm”
+    speech = “”
     
     
     print("Response:")
