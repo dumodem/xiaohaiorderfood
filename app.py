@@ -37,9 +37,6 @@ def makeWebhookResult(req):
     parameters = result.get("parameters")
     otherelse = parameters.get("otherelse")
     
-    #if otherelse != "":
-    #    speech = "好的，你点的是" + otherelse + ", 请付款88元。"
-    #else:
     speech = "请确认，说是的，或说不是。"
     
     
