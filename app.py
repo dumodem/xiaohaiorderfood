@@ -30,7 +30,7 @@ def webhook():
 
 
 def makeWebhookResult(req):
-    speech = “Please confirm by speaking 'Confirm' ”
+    speech = "Please confirm by speaking 'Confirm'. Thanks. "
     
     
     print("Response:")
