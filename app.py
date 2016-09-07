@@ -33,9 +33,9 @@ def makeWebhookResult(req):
         return {}
     result = req.get("result")
     parameters = result.get("parameters")
-    ＃username = parameters.get("user")
-    ＃userlikes = parameters.get("likes")
-    ＃otherelse = parameters.get("otherelse")
+    username = parameters.get("user")
+    userlikes = parameters.get("likes")
+    recommend = parameters.get("recommend")
     
     speech = “Please confirm”
     
